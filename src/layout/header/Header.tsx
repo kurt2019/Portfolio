@@ -5,13 +5,16 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Menu} from "./headerMenu/menu/Menu";
 import {Home} from "../../components/logoOrHome/Home";
 
+
+const items = ["Projects","Contact"];
+
 export const Header = () => {
     return (
         <StyledHeader>
             <Container>
                 <FlexWrapper justify={"space-between"} align={"stretch"}>
                    <Home/>
-                    <Menu/>
+                    <Menu menuItems={items}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
