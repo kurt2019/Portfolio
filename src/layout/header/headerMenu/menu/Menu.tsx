@@ -2,16 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 
-// const menuItem = [
-//     {
-//         title: "Projects",
-//         href: "projects"
-//     },
-//     {
-//         title: "Contact",
-//         href: "contact"
-//     }
-// ];
 
 export const Menu = (props: {menuItems: Array<string>}) => {
     return (

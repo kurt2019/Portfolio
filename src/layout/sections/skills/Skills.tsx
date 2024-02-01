@@ -67,7 +67,7 @@ export const Skills = () => {
         <StyleSkills>
             <Container>
                 <SectionTitle>Skills</SectionTitle>
-                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                <FlexWrapper wrap={"wrap"} justify={"center"}>
                     {SkillList.map((sl, index) => {
                         console.log(sl.iconId, index, sl.title)
                         return (

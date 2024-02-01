@@ -6,7 +6,7 @@ import {Menu} from "./headerMenu/menu/Menu";
 import {Home} from "../../components/logoOrHome/Home";
 
 
-const items = ["Projects","Contact"];
+export const items = ["Projects","Contact"];
 
 export const Header = () => {
     return (
