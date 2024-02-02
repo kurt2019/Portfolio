@@ -10,7 +10,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify={"space-between"}>
+                <FlexWrapper justify={"space-between"} wrap={"wrap"}>
                     <div>
                 <MainTitle>WEB DEVELOPER</MainTitle>
                 <MainName>John Doe</MainName>
@@ -44,7 +44,8 @@ const MainName = styled.h2`
 const MainDescription = styled.p`
   ${font({weight: 400, lineHeight: "24px", Fmax: 16, Fmin: 16})}
   letter-spacing: 0.64px;
-  padding: 10px 0 20px; 
+  padding: 10px 0 30px;
+  width: 540px;
 `
 
 const Photo = styled.img`
@@ -53,10 +54,6 @@ const Photo = styled.img`
   object-fit: cover;
 `
 
-
-
-
-
 const StyledButtonMain = styled.button`
   background: ${theme.lineGrad};
   height: 45px;
@@ -64,4 +61,9 @@ const StyledButtonMain = styled.button`
   ${font({weight: 500, lineHeight: "20px", Fmax: 16, Fmin: 16})};
   color: ${theme.colors.secondaryFont};
   border-radius: 6px;
+  cursor: pointer;
+  
+  &:active {
+    color: red;
+  }
 `
