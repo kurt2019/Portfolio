@@ -21,6 +21,7 @@ export const Main = () => {
 const StyledMain = styled.section`
   min-height: 80vh;
   background-color: rgba(54, 73, 194, 0.91);
+  padding-top: 207px;
 `
 
 const MainTitle= styled.h1`
