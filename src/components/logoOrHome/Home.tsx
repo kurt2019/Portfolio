@@ -13,7 +13,7 @@ const LinkToHome = styled.a`
   padding: 12px 0;
   
   &:hover {
-    ${theme.lineGrad};
+    background: ${theme.lineGrad};
     border-radius: 6px;
     color: ${theme.colors.secondaryFont};
     padding: 1% 1%;

@@ -30,7 +30,7 @@ const StyledMenu = styled.nav`
     }
 
     li:hover {
-      ${theme.lineGrad};
+      background: ${theme.lineGrad};
       border-radius: 6px;
       a {
         color: ${theme.colors.secondaryFont};
@@ -38,7 +38,7 @@ const StyledMenu = styled.nav`
     }
 
     li:last-child {
-      ${theme.lineGrad};
+      background: ${theme.lineGrad};
       border-radius: 6px;
       a {
         color: ${theme.colors.secondaryFont};

@@ -18,7 +18,7 @@ export const GlobalStyled = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${theme.colors.primaryBg};
-    color: ${theme.colors.mainFont};
+    //color: ${theme.colors.mainFont};
     line-height: 1.2;
     min-width: 360px;
   }
@@ -29,10 +29,11 @@ export const GlobalStyled = createGlobalStyle`
     color: ${theme.colors.mainFont};
   }
 
-  //li {
-  //  list-style-type: none;
-  //}
   ul {
     list-style: none;
+  }
+  
+  button {
+    color: ${theme.colors.secondaryFont};
   }
 `

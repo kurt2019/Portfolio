@@ -41,7 +41,7 @@ const ProjectPhoto = styled.img`
 `
 
 const ProjectTitle = styled.h3`
-  ${font({lineHeight: 1.14,})}
+  ${font({lineHeight: "1.14"})}
 `
 
 const DescriptionProject = styled.p`
