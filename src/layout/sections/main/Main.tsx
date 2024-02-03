@@ -26,7 +26,6 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-  min-height: 80vh;
   padding-top: 207px;
 `
 
@@ -53,6 +52,11 @@ const Photo = styled.img`
   width: 422px;
   height: 303px;
   object-fit: cover;
+  
+  @media ${theme.media.mobile} {
+    width: 320px;
+    height: 240px;
+  }
 `
 
 const StyledButtonMain = styled.button`

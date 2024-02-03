@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../../../styles/Theme";
 
 
 export const ItemInProject = (props: {instruments: Array<string>}) => {
@@ -18,5 +19,13 @@ export const ItemInProject = (props: {instruments: Array<string>}) => {
 
 const ItemProject = styled.ul`
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 26px;
+
+  li {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background: ${theme.lineGrad};
+}
 `

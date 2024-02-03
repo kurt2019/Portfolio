@@ -34,7 +34,6 @@ export const Projects = () => {
                              text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'}
                              tools={instrumentsTwo}/>
                 </FlexWrapper>
-
             </Container>
         </StyleProjects>
     );
@@ -42,6 +41,26 @@ export const Projects = () => {
 
 const StyleProjects = styled.section`
   min-height: 90vh;
-  background-color: #dc3bee;
+  padding-top: 130px;
+  
+  ${FlexWrapper} {
+    padding-top: 32px;
+    gap: 28px;
+  }
+  
+  ${Container} {
+    padding: 0 10px;
+  }
+
+  ${SectionTitle} {
+    padding-left: 2%;
+  }
+  
+  @media screen and (min-width: 577px) and (max-width: 1100px) {
+    ${FlexWrapper} {
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `
 

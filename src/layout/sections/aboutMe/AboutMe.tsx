@@ -18,6 +18,7 @@ export const AboutMe = () => {
 };
 
 const AboutMeSection = styled.section`
+  padding-top: 263px;
   
   h2 {
     padding-left: 2.5%;
