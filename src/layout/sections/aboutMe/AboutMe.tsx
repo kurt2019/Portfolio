@@ -26,7 +26,9 @@ const AboutMeSection = styled.section`
 
 const ItemAboutMe = styled.p`
   ${font({weight: 400, lineHeight: "26px", Fmax: 18, Fmin: 18})};
-  max-width: 845px; 
+  max-width: 845px;
+  min-width: 325px;
+  width: 100%;
   padding: 20px 0 0 27px;
   position: relative;
   
