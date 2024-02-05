@@ -24,8 +24,7 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
   height: 100px;
+  width: 100%;
   padding: 28px;
-  font-size: 16px;
   font-weight: 500;
-  
 `

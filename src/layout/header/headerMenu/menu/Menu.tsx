@@ -32,6 +32,7 @@ const StyledMenu = styled.nav`
     li:hover {
       background: ${theme.lineGrad};
       border-radius: 6px;
+
       a {
         color: ${theme.colors.secondaryFont};
       }
@@ -40,19 +41,21 @@ const StyledMenu = styled.nav`
     li:last-child {
       background: ${theme.lineGrad};
       border-radius: 6px;
+
       a {
         color: ${theme.colors.secondaryFont};
       }
     }
 
     li:last-child:hover {
-      background: linear-gradient(90.00deg, rgb(225, 221, 16), rgb(14, 44, 134) 100%);
+      background: linear-gradient(90.00deg, rgb(44, 204, 204), rgb(159, 35, 201) 100%);
       border: 1px solid white;
-      padding: 12px 25px;
-        a {
-          color: ${theme.colors.mainFont};
-        }
+      padding: 12px 20px;
+
+      a {
+        color: ${theme.colors.mainFont};
+      }
     }
-    
+
   }
 `

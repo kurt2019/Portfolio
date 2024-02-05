@@ -40,11 +40,9 @@ export const Projects = () => {
 };
 
 const StyleProjects = styled.section`
-  min-height: 90vh;
   padding-top: 130px;
   
   ${FlexWrapper} {
-    padding-top: 32px;
     gap: 28px;
   }
   
@@ -53,7 +51,7 @@ const StyleProjects = styled.section`
   }
 
   ${SectionTitle} {
-    padding-left: 2%;
+    padding: 0 0 32px 2% ;
   }
   
   @media screen and (min-width: 577px) and (max-width: 1100px) {

@@ -4,6 +4,7 @@ import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
+import {theme} from "../../../styles/Theme";
 
 
 const SkillList = [
@@ -32,8 +33,8 @@ const SkillList = [
         title: "Express JS"
     },
     {
-        iconId: "bootstrap",
-        title: "bootstrap"
+        iconId: "HTML",
+        title: "HTML"
     },
     {
         iconId: "docker",
@@ -68,12 +69,14 @@ export const Skills = () => {
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"center"}>
+                    {/*<GridContainer>*/}
                     {SkillList.map((sl, index) => {
                         console.log(sl.iconId, index, sl.title)
                         return (
                             <Skill iconId={sl.iconId} key={index} title={sl.title}/>
                         )
                     })}
+                    {/*</GridContainer>*/}
                 </FlexWrapper>
             </Container>
         </StyleSkills>
@@ -81,6 +84,15 @@ export const Skills = () => {
 };
 
 const StyleSkills = styled.section`
-  background-color: rgba(236, 196, 200, 0.81);
-  height: 90vh;
+  padding: 140px 0;
+  color: ${theme.colors.mainFont};
+
+  ${SectionTitle} {
+    padding-bottom: 28px;
+  }
+
+  ${FlexWrapper} {
+    column-gap: 112px;
+    row-gap: 60px;
+  }
 `

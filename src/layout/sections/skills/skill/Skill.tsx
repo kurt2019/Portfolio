@@ -20,11 +20,11 @@ export const Skill = (props: SkillPropsType) => {
 const StyleSkill = styled.div`
   width: 120px;
   height: 165px;
-  margin: 8px;
 `
 
 const StyleTitle = styled.h3`
-  margin: 0 0 15px;
   text-transform: uppercase;
   text-align: center;
+  font-size: 16px;
+  font-weight: 400;
 `
