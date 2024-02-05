@@ -4,6 +4,7 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {Icon} from "../../components/icon/Icon";
 import {ItemInProject} from "../sections/projects/project/ItemInProject";
 import {items} from "../header/Header";
+import {theme} from "../../styles/Theme";
 
 
 const socialItemList = [
@@ -27,7 +28,7 @@ export const Footer = () => {
                     {socialItemList.map((il, index) => {
                         return (
                             <SocialItem key={index}>
-                                <SocialLink>
+                                <SocialLink href={"/"}>
                                     <Icon height={"38"} width={"38"} viewBox={"0 0 38 38"}
                                           iconId={il.iconId}/>
                                 </SocialLink>
@@ -36,7 +37,9 @@ export const Footer = () => {
                         )
                     })}
                 </StyleSocialGroup>
+                <HelperItemInFooter>
                 <ItemInProject instruments={items}/>
+                </HelperItemInFooter>
                 <Copyright>WEB DEVELOPER 2021</Copyright>
             </FlexWrapper>
         </StyleFooter>
@@ -44,15 +47,27 @@ export const Footer = () => {
 };
 
 const StyleFooter = styled.footer`
-  height: 60vh;
-  background-color: rgb(30, 30, 30);
+    padding-bottom: 100px;
 `
+
+const HelperItemInFooter = styled.div`
+  ul {
+    gap: 48px;
+    padding: 50px 0 ;
+  }
+  
+    ul >  li {
+      background: inherit;
+      color: ${theme.colors.mainFont};
+      padding: 0;
+    }
+`
+
 
 const StyleSocialGroup = styled.ul`
   display: flex;
-  gap: 15px;
-  //margin-top: 50px;
-  //margin-bottom: 40px;
+  gap: 73px;
+  color: ${theme.colors.mainFont};
 `
 
 const SocialItem = styled.li`
@@ -72,10 +87,12 @@ const Copyright = styled.small`
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-  margin-top: 25px;
+  color: ${theme.colors.mainFont};
+  line-height: 26px;
+  letter-spacing: calc(1em / 20);
 `
 
 const SocialName = styled.span`
   display: inline-block;
-  margin-top: 9px;
+  padding-top: 9px;
 `

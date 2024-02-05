@@ -9,7 +9,12 @@ export const GlobalStyled = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+  *::selection {
+    color: #00030a;
+    background-color: rgba(234, 241, 5, 0.76);
+  }
+
   body {
     margin: 0;
     font-family: 'Montserrat', 'Tinos', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,7 +23,7 @@ export const GlobalStyled = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${theme.colors.primaryBg};
-    //color: ${theme.colors.mainFont};
+      //color: ${theme.colors.mainFont};
     line-height: 1.2;
     min-width: 360px;
   }
@@ -32,7 +37,7 @@ export const GlobalStyled = createGlobalStyle`
   ul {
     list-style: none;
   }
-  
+
   button {
     color: ${theme.colors.secondaryFont};
   }

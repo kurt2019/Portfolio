@@ -72,6 +72,10 @@ const FieldText = styled.textarea`
   &::placeholder {
     color: ${theme.colors.mainFont};
   }
+
+  &:focus::placeholder {
+    color: #919B9B;
+  }
 `
 
 

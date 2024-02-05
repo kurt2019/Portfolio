@@ -31,8 +31,6 @@ const ProjectCard = styled.div`
   height: 100%;
   background-color: #222525;
   border-radius: 6px;
-  //margin: 0 0 28px 0;
-  
 `
 
 const ProjectPhoto = styled.img`

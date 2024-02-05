@@ -12,8 +12,4 @@ export const theme = {
     },
 
     lineGrad: "linear-gradient(90.00deg, rgb(0, 245, 160),rgb(0, 217, 245) 100%);",
-
-    animations: {
-        transition: ".2s ease-in-out",
-    },
 }
