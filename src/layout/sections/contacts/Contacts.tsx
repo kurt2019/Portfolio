@@ -4,7 +4,7 @@ import {Container} from "../../../components/Container";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {font} from "../../../styles/Common";
 import {theme} from "../../../styles/Theme";
-import {StyledButtonMain} from "../../../components/Button";
+import {Button} from "../../../components/Button";
 
 export const Contacts = () => {
     return (
@@ -21,7 +21,7 @@ export const Contacts = () => {
                     <HelperGradLine>
                     <FieldText id={"message"} placeholder={"Hi, i will ..."} as={"textarea"}/>
                     </HelperGradLine>
-                    <StyledButtonMain>Submit</StyledButtonMain>
+                    <Button>Submit</Button>
                 </StyledForm>
             </Container>
         </StyleContacts>
@@ -43,7 +43,7 @@ const StyledForm = styled.form`
   color: ${theme.colors.mainFont};
   position: relative;
   
-  ${StyledButtonMain} {
+  ${Button} {
     margin-top: 22px;
     width: 100%;
   }

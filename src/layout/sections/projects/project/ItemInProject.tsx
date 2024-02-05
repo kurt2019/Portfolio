@@ -22,6 +22,10 @@ const ItemProject = styled.ul`
   flex-wrap: wrap;
   gap: 12px;
   padding-left: 26px;
+  
+  @media ${theme.media.mobile} {
+    padding-left: 10px;
+  }
 
   li {
     padding: 8px 16px;

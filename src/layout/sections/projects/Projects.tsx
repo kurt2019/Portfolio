@@ -6,6 +6,9 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Project} from "./project/Project";
 import project1Img from './../../../assets/images/proj_1.png';
 import project2Img from './../../../assets/images/proj_2.png';
+import {theme} from "../../../styles/Theme";
+import {Button} from "../../../components/Button";
+import {font} from "../../../styles/Common";
 
 
 const instrumentsOne = ["JavaScript", "PostGreSQL", "React", "Redux"];
@@ -34,6 +37,7 @@ export const Projects = () => {
                              text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'}
                              tools={instrumentsTwo}/>
                 </FlexWrapper>
+                <Button>SEE ALL PROJECTS</Button>
             </Container>
         </StyleProjects>
     );
@@ -41,6 +45,10 @@ export const Projects = () => {
 
 const StyleProjects = styled.section`
   padding-top: 130px;
+  
+  @media ${theme.media.mobile} {
+    padding-top: 100px ;
+  }
   
   ${FlexWrapper} {
     gap: 28px;
@@ -51,7 +59,21 @@ const StyleProjects = styled.section`
   }
 
   ${SectionTitle} {
-    padding: 0 0 32px 2% ;
+    padding: 0 0 32px 2%;
+  }
+  
+  ${Button} {
+    display: none;
+
+    @media ${theme.media.mobile} {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: calc(100% - 60px);
+      max-width: 305px;
+      margin: 23px auto 0;
+      ${font({color: `${theme.colors.secondaryFont}`, weight: 500, Fmax: 16, Fmin: 16})}
+    }
   }
   
   @media screen and (min-width: 577px) and (max-width: 1100px) {

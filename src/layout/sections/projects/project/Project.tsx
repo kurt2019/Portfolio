@@ -31,6 +31,11 @@ const ProjectCard = styled.div`
   height: 100%;
   background-color: #222525;
   border-radius: 6px;
+  
+  @media ${theme.media.mobile} {
+    max-width: 363px;
+    margin: 0 auto;
+  }
 `
 
 const ProjectPhoto = styled.img`
@@ -54,7 +59,7 @@ const ProjectTitle = styled.h3`
 
 const DescriptionProject = styled.p`
   ${font({ weight: 400 ,lineHeight: "24px", Fmax: 16, Fmin: 16})};
-  padding: 19px 9px 32px 26px ;
+  padding: 19px 9px 32px 26px;
 `
 
 

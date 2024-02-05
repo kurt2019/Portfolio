@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {theme} from "../styles/Theme";
 import {font} from "../styles/Common";
 
-export const StyledButtonMain = styled.button`
+export const Button = styled.button`
   background: ${theme.lineGrad};
   height: 45px;
   width: 135px;

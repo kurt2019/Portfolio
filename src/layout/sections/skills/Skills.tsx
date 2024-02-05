@@ -86,10 +86,19 @@ const StyleSkills = styled.section`
 
   ${SectionTitle} {
     padding-bottom: 28px;
+    
+    @media ${theme.media.mobile} {
+      padding-bottom: 47px;
+    }
   }
 
   ${FlexWrapper} {
     column-gap: 112px;
     row-gap: 60px;
   }
+  
+  @media ${theme.media.mobile} {
+    padding: 100px 0;
+  }
+  
 `

@@ -5,7 +5,7 @@ import photo from "../../../assets/images/logo_me.png"
 import {font} from "../../../styles/Common";
 import {theme} from "../../../styles/Theme";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-import {StyledButtonMain} from "../../../components/Button";
+import {Button} from "../../../components/Button";
 
 export const Main = () => {
     return (
@@ -17,7 +17,7 @@ export const Main = () => {
                 <MainName>John Doe</MainName>
                 <MainDescription>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt.
                 </MainDescription>
-                        <StyledButtonMain>Contact Me</StyledButtonMain>
+                        <Button>Contact Me</Button>
                     </div>
                         <Photo src={photo} alt=""/>
                 </FlexWrapper>
@@ -28,10 +28,33 @@ export const Main = () => {
 
 const StyledMain = styled.section`
   padding-top: 207px;
+  
+  @media ${theme.media.mobile} {
+    padding-top: 29px;
+    
+    ${FlexWrapper} {
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      
+      & > div {
+        @media ${theme.media.mobile} {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
 `
 
 const MainTitle= styled.h1`
-  ${font({family: "'Tinos', sans-serif ", weight: 400, lineHeight: "23px", Fmax: 20, Fmin: 16})} 
+  ${font({family: "'Tinos', sans-serif ", weight: 400, lineHeight: "23px", Fmax: 20, Fmin: 16})}; 
+  
+  @media ${theme.media.mobile} {
+    padding-top: 70px;
+    align-items: center;
+  }
 `
 
 const MainName = styled.h2`
@@ -47,6 +70,11 @@ const MainDescription = styled.p`
   padding: 10px 0 30px;
   max-width: 540px;
   width: 100%;
+  
+  @media ${theme.media.mobile} {
+    max-width: 329px;
+    text-align: center;
+  }
 `
 
 const Photo = styled.img`
