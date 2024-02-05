@@ -5,6 +5,7 @@ import photo from "../../../assets/images/logo_me.png"
 import {font} from "../../../styles/Common";
 import {theme} from "../../../styles/Theme";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {StyledButtonMain} from "../../../components/Button";
 
 export const Main = () => {
     return (
@@ -59,24 +60,4 @@ const Photo = styled.img`
   }
 `
 
-const StyledButtonMain = styled.button`
-  background: ${theme.lineGrad};
-  height: 45px;
-  width: 135px;
-  ${font({weight: 500, lineHeight: "20px", Fmax: 16, Fmin: 16})};
-  color: ${theme.colors.secondaryFont};
-  border-radius: 6px;
-  cursor: pointer;
 
-  &:hover {
-    color: #918828;
-    font-weight: bolder;
-    border: 3px solid #918828;
-  }
-
-  &:active {
-    color: rgba(169, 153, 167, 0.7);
-    font-weight: bold;
-    border: 2px solid rgba(169, 153, 167, 0.7);
-  }
-`

@@ -45,14 +45,14 @@ export const Footer = () => {
 
 const StyleFooter = styled.footer`
   height: 60vh;
-  background-color: rgb(30, 30, 30);;
+  background-color: rgb(30, 30, 30);
 `
 
 const StyleSocialGroup = styled.ul`
   display: flex;
   gap: 15px;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  //margin-top: 50px;
+  //margin-bottom: 40px;
 `
 
 const SocialItem = styled.li`

@@ -69,14 +69,11 @@ export const Skills = () => {
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"center"}>
-                    {/*<GridContainer>*/}
                     {SkillList.map((sl, index) => {
-                        console.log(sl.iconId, index, sl.title)
                         return (
                             <Skill iconId={sl.iconId} key={index} title={sl.title}/>
                         )
                     })}
-                    {/*</GridContainer>*/}
                 </FlexWrapper>
             </Container>
         </StyleSkills>
