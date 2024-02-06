@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
-export const Home = () => {
+export const Home: React.FC = () => {
     return (
         <LinkToHome href="/">Home</LinkToHome>
     );

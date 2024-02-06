@@ -1,30 +1,22 @@
 import React from 'react';
-import styled from "styled-components";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
-import {Menu} from "./headerMenu/menu/Menu";
+import {Menu} from "./menu/Menu";
 import {Home} from "../../components/logoOrHome/Home";
-import {theme} from "../../styles/Theme";
+import {SH} from "./HeaderAndMenu_Styles";
 
 
-export const items = ["Projects","Contact"];
+export const items = ["Projects", "Contact"];
 
-export const Header = () => {
+export const Header: React.FC = () => {
     return (
-        <StyledHeader>
+        <SH.Header>
             <Container>
                 <FlexWrapper justify={"space-between"} align={"stretch"}>
-                   <Home/>
+                    <Home/>
                     <Menu menuItems={items}/>
                 </FlexWrapper>
             </Container>
-        </StyledHeader>
+        </SH.Header>
     );
 };
-
-const StyledHeader = styled.header`
-  height: 100px;
-  width: 100%;
-  padding: 28px;
-  font-weight: 500;
-`

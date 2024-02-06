@@ -1,11 +1,9 @@
 import React from 'react';
-import styled from "styled-components";
 import {Container} from "../../../components/Container";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {theme} from "../../../styles/Theme";
 import {Skills} from "./middleSkills/Skills";
 import {SkillsMob} from "./middleSkills/SkillsMob";
+import {SS} from "./SkillsOlder_Styles";
 
 
 export const SkillList = [
@@ -76,39 +74,11 @@ export const SkillsOlder: React.FC = () => {
     }, []);
 
     return (
-        <StyleSkills>
+        <SS.Skills>
             <Container>
                 <SectionTitle>Skills</SectionTitle>
                     {width < breakpoint ? <SkillsMob/> : <Skills/>}
             </Container>
-        </StyleSkills>
+        </SS.Skills>
     );
 };
-
-const StyleSkills = styled.section`
-  padding: 140px 0;
-  color: ${theme.colors.mainFont};
-
-  ${SectionTitle} {
-    padding-bottom: 28px;
-    
-    @media ${theme.media.mobile} {
-      padding-bottom: 47px;
-    }
-  }
-
-  ${FlexWrapper} {
-    column-gap: 112px;
-    row-gap: 105px;
-    
-    @media ${theme.media.mobile} {
-      column-gap: 48px;
-      row-gap: 80px;
-    }
-  }
-  
-  @media ${theme.media.mobile} {
-    padding: 100px 0;
-  }
-  
-`

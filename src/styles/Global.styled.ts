@@ -11,8 +11,8 @@ export const GlobalStyled = createGlobalStyle`
   }
 
   *::selection {
-    color: #00030a;
-    background-color: rgba(234, 241, 5, 0.76);
+    color: black;
+    background-color: rgba(251, 255, 60, 0.76);
   }
 
   body {
@@ -23,7 +23,7 @@ export const GlobalStyled = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${theme.colors.primaryBg};
-      //color: ${theme.colors.mainFont};
+    color: ${theme.colors.mainFont};
     line-height: 1.2;
     min-width: 360px;
   }

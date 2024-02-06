@@ -13,11 +13,9 @@ export const Button = styled.button`
   outline: 0;
   border: 0;
   
-
   &:hover {
     background: linear-gradient(90.00deg, rgb(44, 204, 204), rgb(159, 35, 201) 100%);
     border: 1px solid white;
-    //padding: 12px 20px;
     color: ${theme.colors.secondaryFont};
     font-weight: 600;
   }

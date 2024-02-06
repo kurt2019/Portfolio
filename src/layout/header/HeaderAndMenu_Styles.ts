@@ -1,26 +1,15 @@
-import React from "react";
 import styled from "styled-components";
-import {theme} from "../../../../styles/Theme";
+import {theme} from "../../styles/Theme";
 
 
+const Header = styled.header`
+  height: 100px;
+  width: 100%;
+  padding: 28px;
+  font-weight: 500;
+`
 
-export const Menu = (props: {menuItems: Array<string>}) => {
-    return (
-        <StyledMenu>
-            <ul>
-                {props.menuItems.map((item, index) => {
-                    return (
-                        <li key={index}>
-                            <a href={""}>{item}</a>
-                        </li>
-                    )
-                })}
-            </ul>
-        </StyledMenu>
-    )
-};
-
-const StyledMenu = styled.nav`
+const Menu = styled.nav`
   ul {
     display: flex;
     gap: 30px;
@@ -55,6 +44,11 @@ const StyledMenu = styled.nav`
         color: ${theme.colors.mainFont};
       }
     }
-
   }
 `
+
+
+export const SH = {
+    Header,
+    Menu,
+}

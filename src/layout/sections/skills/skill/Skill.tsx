@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon";
 import {font} from "../../../../styles/Common";
 
+
 type SkillPropsType = {
     iconId: string
     title: string
