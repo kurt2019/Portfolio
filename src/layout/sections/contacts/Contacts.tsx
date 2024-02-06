@@ -31,6 +31,14 @@ export const Contacts = () => {
 
 const StyleContacts= styled.section`
   padding:  140px 0 190px 0;
+  
+  @media ${theme.media.tablet} {
+    padding-top: 0;
+  }
+
+  @media ${theme.media.mobile} {
+    padding-top: 0;
+  }
 `
 
 const StyledForm = styled.form`

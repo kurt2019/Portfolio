@@ -46,6 +46,10 @@ const StyledMain = styled.section`
       }
     }
   }
+  
+  @media ${theme.media.tablet} {
+    padding-top: 15%;
+  }
 `
 
 const MainTitle= styled.h1`
@@ -75,6 +79,9 @@ const MainDescription = styled.p`
     max-width: 329px;
     text-align: center;
   }
+  @media ${theme.media.tablet} {
+    text-align: center;
+  }
 `
 
 const Photo = styled.img`
@@ -85,6 +92,10 @@ const Photo = styled.img`
   @media ${theme.media.mobile} {
     width: 320px;
     height: 240px;
+  }
+  
+  @media ${theme.media.tablet} {
+    margin-top: 10%;
   }
 `
 

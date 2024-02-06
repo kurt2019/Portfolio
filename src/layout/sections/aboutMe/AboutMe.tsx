@@ -19,13 +19,17 @@ export const AboutMe = () => {
 
 const AboutMeSection = styled.section`
   padding-top: 385px;
+
+  h2 {
+    padding-left: 2.5%;
+  }
   
   @media ${theme.media.mobile} {
     padding-top: 73px;
   }
   
-  h2 {
-    padding-left: 2.5%;
+  @media ${theme.media.tablet} {
+    padding-top: 18%;
   }
 `
 

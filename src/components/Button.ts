@@ -10,6 +10,8 @@ export const Button = styled.button`
   color: ${theme.colors.secondaryFont};
   border-radius: 6px;
   cursor: pointer;
+  outline: 0;
+  border: 0;
   
 
   &:hover {

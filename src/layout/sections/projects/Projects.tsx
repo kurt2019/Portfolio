@@ -72,7 +72,7 @@ const StyleProjects = styled.section`
       width: calc(100% - 60px);
       max-width: 305px;
       margin: 23px auto 0;
-      ${font({color: `${theme.colors.secondaryFont}`, weight: 500, Fmax: 16, Fmin: 16})}
+      ${font({color: `${theme.colors.secondaryFont}`, weight: 500, Fmax: 16, Fmin: 16})};
     }
   }
   

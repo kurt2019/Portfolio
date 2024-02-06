@@ -9,22 +9,22 @@ type SkillPropsType = {
 }
 
 
-export const Skill = (props: SkillPropsType) => {
+export const SkillMob = (props: SkillPropsType) => {
     return (
         <StyleSkill>
-            <Icon iconId={props.iconId}/>
+            <Icon iconId={props.iconId} viewBox={"0 0 120 120"} height={"88"} width={"88"}/>
             <StyleTitle>{props.title}</StyleTitle>
         </StyleSkill>
     );
 };
 
 const StyleSkill = styled.div`
-  width: 120px;
-  height: 165px;
+  width: 88px;
+  height: 88px;
 `
 
 const StyleTitle = styled.h3`
-  ${font({weight: 400, Fmax: 16, Fmin: 12})}
+  ${font({weight: 400, Fmin: 12, Fmax: 16})}
   text-transform: uppercase;
   text-align: center;
   padding-top: 22px;

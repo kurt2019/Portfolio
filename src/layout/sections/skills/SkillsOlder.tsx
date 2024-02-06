@@ -3,11 +3,12 @@ import styled from "styled-components";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Skill} from "./skill/Skill";
 import {theme} from "../../../styles/Theme";
+import {Skills} from "./middleSkills/Skills";
+import {SkillsMob} from "./middleSkills/SkillsMob";
 
 
-const SkillList = [
+export const SkillList = [
     {
         iconId: "javascript",
         title: "JAVACRIPT"
@@ -63,18 +64,22 @@ const SkillList = [
 ]
 
 
-export const Skills = () => {
+export const SkillsOlder: React.FC = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 768;
+
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
     return (
         <StyleSkills>
             <Container>
                 <SectionTitle>Skills</SectionTitle>
-                <FlexWrapper wrap={"wrap"} justify={"center"}>
-                    {SkillList.map((sl, index) => {
-                        return (
-                            <Skill iconId={sl.iconId} key={index} title={sl.title}/>
-                        )
-                    })}
-                </FlexWrapper>
+                    {width < breakpoint ? <SkillsMob/> : <Skills/>}
             </Container>
         </StyleSkills>
     );
@@ -94,7 +99,12 @@ const StyleSkills = styled.section`
 
   ${FlexWrapper} {
     column-gap: 112px;
-    row-gap: 60px;
+    row-gap: 105px;
+    
+    @media ${theme.media.mobile} {
+      column-gap: 48px;
+      row-gap: 80px;
+    }
   }
   
   @media ${theme.media.mobile} {
