@@ -6,6 +6,7 @@ import {Button} from "../../../components/Button";
 import {SM} from "./Main_Styles";
 import {MainButton} from "./MainButton";
 import {Bounce} from "react-awesome-reveal";
+import Typewriter from 'typewriter-effect';
 
 
 export const Main: React.FC = () => {
@@ -14,7 +15,18 @@ export const Main: React.FC = () => {
             <Container>
                 <FlexWrapper justify={"space-between"} wrap={"wrap"}>
                     <div>
-                        <SM.Title>WEB DEVELOPER</SM.Title>
+                        <SM.Title>
+                            <p>WEB DEVELOPER</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['WEB DEVELOPER', 'Frontend Developer', 'html coder'],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 83,
+                                    deleteSpeed: 100
+                                }}
+                            />
+                        </SM.Title>
                         <SM.Name>John Doe</SM.Name>
                         <SM.Description>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                             officia consequat duis enim velit mollit. Exercitation veniam consequat sunt.

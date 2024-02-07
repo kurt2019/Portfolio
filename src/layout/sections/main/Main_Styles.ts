@@ -41,6 +41,11 @@ const Main = styled.section`
 
 const Title = styled.h1`
   ${font({family: "'Tinos', sans-serif ", weight: 400, lineHeight: "23px", Fmax: 20, Fmin: 16})};
+  text-transform: uppercase;
+  
+  p {
+    display: none;
+  }
 
   @media ${theme.media.mobile} {
     padding-top: 70px;
