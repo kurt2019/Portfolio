@@ -3,7 +3,7 @@ import {theme} from "../styles/Theme";
 import {font} from "../styles/Common";
 
 export const Button = styled.button`
-  background: ${theme.lineGrad};
+  background: ${theme.lineGrad.first};
   height: 45px;
   width: 135px;
   ${font({weight: 500, lineHeight: "20px", Fmax: 16, Fmin: 16})};
@@ -14,9 +14,9 @@ export const Button = styled.button`
   border: 0;
   
   &:hover {
-    background: linear-gradient(90.00deg, rgb(44, 204, 204), rgb(159, 35, 201) 100%);
+    background: ${theme.lineGrad.second};
     border: 1px solid white;
-    color: ${theme.colors.secondaryFont};
+    color: ${theme.colors.mainFont};
     font-weight: 600;
   }
 

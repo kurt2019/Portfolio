@@ -6,7 +6,7 @@ import {SC} from "./Contacts_Styles";
 
 export const Contacts: React.FC = () => {
     return (
-        <SC.Contacts>
+        <SC.Contacts id={"contact"}>
             <Container>
                 <SectionTitle>Contacts</SectionTitle>
                 <SC.Form>
@@ -19,7 +19,7 @@ export const Contacts: React.FC = () => {
                     <SC.HelperGradLine>
                         <SC.FieldText id={"message"} placeholder={"Hi, i will ..."} as={"textarea"}/>
                     </SC.HelperGradLine>
-                    <Button>Submit</Button>
+                    <Button type={"submit"}>Submit</Button>
                 </SC.Form>
             </Container>
         </SC.Contacts>

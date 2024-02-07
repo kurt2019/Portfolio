@@ -30,17 +30,23 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-  background: linear-gradient(90.00deg, rgb(0, 245, 160), rgb(0, 217, 245) 100%);
+  background: ${theme.lineGrad.first};
   border-radius: 50%;
   width: 38px;
   height: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ${theme.animations.transition};
+
+  &:hover {
+    transform: translateY(-10px);
+    background: ${theme.lineGrad.second};
+  }
 `
 
 const Copyright = styled.small`
-  ${font({weight: 400, lineHeight: "26px", Fmin: 14, Fmax: 14})}
+  ${font({weight: 400, lineHeight: "26px", Fmin: 14, Fmax: 14})};
   text-align: center;
   color: ${theme.colors.mainFont};
   letter-spacing: calc(1em / 20);

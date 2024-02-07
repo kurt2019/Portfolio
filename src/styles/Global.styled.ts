@@ -23,7 +23,6 @@ export const GlobalStyled = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${theme.colors.primaryBg};
-    color: ${theme.colors.mainFont};
     line-height: 1.2;
     min-width: 360px;
   }

@@ -11,10 +11,13 @@ export const theme = {
         desktop: "screen and (min-width: 1140px)",
     },
 
-    lineGrad: "linear-gradient(90.00deg, rgb(0, 245, 160),rgb(0, 217, 245) 100%);",
+    lineGrad: {
+        first: "linear-gradient(90.00deg, rgb(0, 245, 160),rgb(0, 217, 245) 100%);",
+        second: "linear-gradient(130.00deg, rgb(44, 204, 204), rgb(159, 35, 201) 100%)",
+    },
 
     animations: {
-        transition: ".2s ease-in-out",
+        transition: ".3s ease-in-out",
     }
 }
 

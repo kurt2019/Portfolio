@@ -15,7 +15,7 @@ const ItemProject = styled.ul`
   li {
     padding: 8px 16px;
     border-radius: 4px;
-    background: ${theme.lineGrad};
+    background: ${theme.lineGrad.first};
   }
 `
 

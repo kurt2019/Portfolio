@@ -53,8 +53,8 @@ const Title = styled.h1`
 `
 
 const Name = styled.h2`
-  ${font({lineHeight: "88px", Fmax: 72, Fmin: 40})}
-  background-image: linear-gradient(130deg, rgb(0, 245, 160), rgb(0, 217, 245) 50%);
+  ${font({lineHeight: "88px", Fmax: 72, Fmin: 40})};
+  background-image: ${theme.lineGrad.first};
   color: transparent;
   -webkit-background-clip: text;
 `

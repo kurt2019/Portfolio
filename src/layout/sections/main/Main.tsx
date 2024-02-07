@@ -7,7 +7,7 @@ import {SM} from "./Main_Styles";
 
 export const Main: React.FC = () => {
     return (
-        <SM.Main>
+        <SM.Main id={"home"}>
             <Container>
                 <FlexWrapper justify={"space-between"} wrap={"wrap"}>
                     <div>

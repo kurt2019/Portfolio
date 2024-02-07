@@ -2,22 +2,25 @@ import React from 'react';
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Icon} from "../../components/icon/Icon";
 import {ItemInProject} from "../sections/projects/project/ItemInProject";
-import {items} from "../header/Header";
 import {SF} from "./Footer_Styles";
 
 
 const socialItemList = [
     {
-        iconId: "GMAIL"
+        iconId: "GMAIL",
+        href: "https://www.google.com/intl/en_uk/gmail/about/"
     },
     {
-        iconId: "LINKEDIN"
+        iconId: "LINKEDIN",
+        href: "https://www.linkedin.com/"
     },
     {
-        iconId: "GITHUB"
+        iconId: "GITHUB",
+        href: "https://github.com/"
     }
 ]
 
+const items = ["Projects", "Contact"];
 
 export const Footer: React.FC = () => {
     return (
@@ -27,7 +30,7 @@ export const Footer: React.FC = () => {
                     {socialItemList.map((il, index) => {
                         return (
                             <SF.SocialItem key={index}>
-                                <SF.SocialLink href={"/"}>
+                                <SF.SocialLink href={il.href}>
                                     <Icon height={"38"} width={"38"} viewBox={"0 0 38 38"}
                                           iconId={il.iconId}/>
                                 </SF.SocialLink>

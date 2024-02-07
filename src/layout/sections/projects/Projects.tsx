@@ -14,7 +14,7 @@ const instrumentsTwo = ["JavaScript", "ReactNative", "Redux"];
 
 export const Projects: React.FC = () => {
     return (
-        <SP.Projects>
+        <SP.Projects id={"projects"}>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>

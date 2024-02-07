@@ -32,7 +32,7 @@ const Form = styled.form`
 `
 
 const HelperGradLine = styled.div`
-  background-image: ${theme.lineGrad};
+  background-image: ${theme.lineGrad.first};
   height: 165px;
   width: 100%;
   border-radius: 6px;

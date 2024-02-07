@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {Link} from "react-scroll";
 
 
 const Header = styled.header`
@@ -7,6 +8,8 @@ const Header = styled.header`
   width: 100%;
   padding: 28px;
   font-weight: 500;
+  
+  position: fixed;
 `
 
 const Menu = styled.nav`
@@ -19,7 +22,7 @@ const Menu = styled.nav`
     }
 
     li:hover {
-      background: ${theme.lineGrad};
+      background: ${theme.lineGrad.first};
       border-radius: 6px;
 
       a {
@@ -28,7 +31,7 @@ const Menu = styled.nav`
     }
 
     li:last-child {
-      background: ${theme.lineGrad};
+      background: ${theme.lineGrad.first};
       border-radius: 6px;
 
       a {
@@ -37,7 +40,7 @@ const Menu = styled.nav`
     }
 
     li:last-child:hover {
-      background: linear-gradient(90.00deg, rgb(44, 204, 204), rgb(159, 35, 201) 100%);
+      background: ${theme.lineGrad.second};
       border: 1px solid white;
 
       a {
@@ -47,8 +50,12 @@ const Menu = styled.nav`
   }
 `
 
+const MyLink = styled(Link)`
+`
+
 
 export const SH = {
     Header,
     Menu,
+    MyLink
 }

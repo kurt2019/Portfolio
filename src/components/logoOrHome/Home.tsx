@@ -1,19 +1,22 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {Link} from "react-scroll";
 
 export const Home: React.FC = () => {
     return (
-        <LinkToHome href="/">Home</LinkToHome>
+        <LinkToHome to = "home"
+                    smooth={true}
+        >Home</LinkToHome>
     );
 };
 
-const LinkToHome = styled.a`
+const LinkToHome = styled(Link)`
   display: flex;
   padding: 12px 0;
   
   &:hover {
-    background: ${theme.lineGrad};
+    background: ${theme.lineGrad.first};
     border-radius: 6px;
     color: ${theme.colors.secondaryFont};
     padding: 1% 1%;

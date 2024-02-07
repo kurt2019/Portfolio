@@ -29,7 +29,7 @@ const Item = styled.p`
   &::before {
     content: "";
     display: inline-block;
-    background: ${theme.lineGrad};
+    background: ${theme.lineGrad.first};
     border-radius: 2px;
     height: 116px;
     width: 5px;
