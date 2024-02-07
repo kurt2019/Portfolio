@@ -11,7 +11,7 @@ const Header = styled.header`
 `
 
 const Menu = styled.nav`
-  
+
   ul {
     display: flex;
     gap: 30px;
@@ -19,19 +19,19 @@ const Menu = styled.nav`
     li {
       padding: 12px 0;
     }
-    
+
     li > a {
       padding: 12px 20px;
     }
 
-    li:hover {
-      background: ${theme.lineGrad.first};
-      border-radius: 6px;
+    li:first-child {
+      background: inherit;
+    }
 
-      a {
-        color: ${theme.colors.secondaryFont};
-        padding: 12px 20px;
-      }
+    li:first-child:hover {
+      background: ${theme.lineGrad.second};
+      border-radius: 6px;
+      border: 1px solid white;
     }
 
     li:last-child {
@@ -51,6 +51,7 @@ const Menu = styled.nav`
         color: ${theme.colors.mainFont};
       }
     }
+
   }
 `
 
@@ -61,5 +62,5 @@ const MyLink = styled(Link)`
 export const SH = {
     Header,
     Menu,
-    MyLink
+    MyLink,
 }

@@ -3,11 +3,10 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {Link} from "react-scroll";
 
+
 export const Home: React.FC = () => {
     return (
-        <LinkToHome to = "home"
-                    smooth={true}
-        >Home</LinkToHome>
+        <LinkToHome to = "home" smooth={true}>Home</LinkToHome>
     );
 };
 

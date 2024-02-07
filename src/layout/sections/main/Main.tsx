@@ -7,6 +7,7 @@ import {SM} from "./Main_Styles";
 import {MainButton} from "./MainButton";
 import {Bounce} from "react-awesome-reveal";
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 
 export const Main: React.FC = () => {
@@ -36,7 +37,17 @@ export const Main: React.FC = () => {
                         </Bounce>
                         <MainButton/>
                     </div>
+                    <Tilt
+                        className="parallax-effect-img"
+                        tiltMaxAngleX={40}
+                        tiltMaxAngleY={40}
+                        perspective={800}
+                        transitionSpeed={1500}
+                        scale={1.2}
+                        gyroscope={true}
+                    >
                     <SM.Photo src={photo} alt="Avatar"/>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
         </SM.Main>
