@@ -7,6 +7,7 @@ import {Projects} from "./layout/sections/projects/Projects";
 import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Footer} from "./layout/footer/Footer";
 import {SkillsOlder} from "./layout/sections/skills/SkillsOlder";
+import {GoTopButton} from "./components/goTopBtn/GoTopBtn";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <SkillsOlder/>
         <Contacts/>
         <Footer/>
+        <GoTopButton/>
     </div>
   );
 }

@@ -8,8 +8,6 @@ const Header = styled.header`
   width: 100%;
   padding: 28px;
   font-weight: 500;
-  
-  position: fixed;
 `
 
 const Menu = styled.nav`

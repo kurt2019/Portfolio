@@ -1,13 +1,13 @@
 export const theme = {
     colors: {
-        primaryBg: "#041F31",
+        primaryBg: "#041f31",
         mainFont: "#BDEBEA",
         secondaryFont: "#252728"
     },
 
     media: {
         mobile: "screen and (max-width: 540px)",
-        tablet: "screen and (min-width: 768px)",
+        tablet: "screen and (max-width: 1028px)",
         desktop: "screen and (min-width: 1140px)",
     },
 

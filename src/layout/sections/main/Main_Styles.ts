@@ -2,14 +2,20 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {font} from "../../../styles/Common";
+import {MainButton} from "./MainButton";
 
 
 const Main = styled.section`
-  padding-top: 207px;
+  padding: 207px 0 125px 0;
 
+  ${FlexWrapper} > div {
+    position: relative;
+  }
+  
+  
   @media ${theme.media.mobile} {
     padding-top: 29px;
-
+    
     ${FlexWrapper} {
       flex-wrap: wrap-reverse;
       justify-content: center;
@@ -29,16 +35,6 @@ const Main = styled.section`
 
     & > div {
       text-align: center;
-    }
-  }
-
-  @media ${theme.media.desktop} {
-    ${FlexWrapper} {
-      justify-content: space-between;
-    }
-
-    & > div {
-      text-align: left;
     }
   }
 `
@@ -70,6 +66,7 @@ const Description = styled.p`
     max-width: 329px;
     text-align: center;
   }
+  
 `
 
 const Photo = styled.img`
@@ -83,9 +80,6 @@ const Photo = styled.img`
   }
   @media ${theme.media.tablet} {
     margin-top: 10%;
-  }
-  @media ${theme.media.desktop} {
-    margin: 0;
   }
 `
 

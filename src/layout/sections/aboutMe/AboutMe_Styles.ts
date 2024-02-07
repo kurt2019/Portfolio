@@ -1,10 +1,15 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const Section = styled.section`
-  padding-top: 385px;
-
+  padding-top: 265px;
+  
+  ${FlexWrapper} > div {
+    position: relative;
+  }
+  
   h2 {
     padding-left: 2.5%;
   }
@@ -23,7 +28,7 @@ const Item = styled.p`
   max-width: 845px;
   min-width: 325px;
   width: 100%;
-  padding: 20px 0 0 27px;
+  padding: 20px 27px 0 27px;
   position: relative;
   
   &::before {
