@@ -5,6 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Button} from "../../../components/Button";
 import {SM} from "./Main_Styles";
 import {MainButton} from "./MainButton";
+import {Bounce} from "react-awesome-reveal";
 
 
 export const Main: React.FC = () => {
@@ -18,7 +19,9 @@ export const Main: React.FC = () => {
                         <SM.Description>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                             officia consequat duis enim velit mollit. Exercitation veniam consequat sunt.
                         </SM.Description>
-                        <Button>Contact Me</Button>
+                        <Bounce damping={0.6}>
+                            <Button>Contact Me</Button>
+                        </Bounce>
                         <MainButton/>
                     </div>
                     <SM.Photo src={photo} alt="Avatar"/>
