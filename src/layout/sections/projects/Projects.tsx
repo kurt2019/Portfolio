@@ -35,7 +35,7 @@ export const Projects: React.FC = () => {
                              text={'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'}
                              tools={instrumentsTwo}/>
                 </FlexWrapper>
-                <Button>SEE ALL PROJECTS</Button>
+                <Button hidden>SEE ALL PROJECTS</Button>
             </Container>
         </SP.Projects>
     );

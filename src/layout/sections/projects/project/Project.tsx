@@ -1,6 +1,7 @@
 import React from 'react';
 import {ItemInProject} from "./ItemInProject";
 import {SPmin} from "./Project_Styles";
+import {Button} from "../../../../components/Button";
 
 
 type ProjectPropsType = {
@@ -13,7 +14,10 @@ type ProjectPropsType = {
 export const Project = (props: ProjectPropsType) => {
     return (
         <SPmin.Card>
-            <SPmin.Photo src={props.src}/>
+            <SPmin.ImageWrapper>
+                <SPmin.Photo src={props.src}/>
+                <Button>Take a look</Button>
+            </SPmin.ImageWrapper>
             <SPmin.Title>{props.title}</SPmin.Title>
             <ItemInProject instruments={props.tools}/>
             <SPmin.Description>{props.text}</SPmin.Description>

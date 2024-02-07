@@ -11,11 +11,16 @@ const Header = styled.header`
 `
 
 const Menu = styled.nav`
+  
   ul {
     display: flex;
     gap: 30px;
 
     li {
+      padding: 12px 0;
+    }
+    
+    li > a {
       padding: 12px 20px;
     }
 
@@ -25,6 +30,7 @@ const Menu = styled.nav`
 
       a {
         color: ${theme.colors.secondaryFont};
+        padding: 12px 20px;
       }
     }
 

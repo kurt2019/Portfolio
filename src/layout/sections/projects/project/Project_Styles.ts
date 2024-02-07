@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {font} from "../../../../styles/Common";
+import {Button} from "../../../../components/Button";
+
 
 const ItemProject = styled.ul`
   display: flex;
@@ -57,10 +59,59 @@ const Description = styled.p`
   padding: 19px 9px 32px 26px;
 `
 
+const ImageWrapper = styled.div`
+  position: relative;
+
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    transition: ${theme.animations.transition};
+    min-width: 50%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(146, 225, 222, 0.3);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: ${theme.animations.transition};
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+
+    ${Button} {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media ${theme.media.tablet} {
+    &::before {
+      opacity: 1;
+    }
+
+    ${Button} {
+      opacity: 1;
+    }
+  }
+`
+
 export const SPmin = {
     ItemProject,
     Card,
     Photo,
     Title,
     Description,
+    ImageWrapper,
 }
