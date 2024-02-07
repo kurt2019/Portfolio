@@ -29,9 +29,13 @@ const Menu = styled.nav`
     }
 
     li:first-child:hover {
-      background: ${theme.lineGrad.second};
+      background: ${theme.lineGrad.first};
       border-radius: 6px;
       border: 1px solid white;
+      
+      a {
+        color: ${theme.colors.secondaryFont};
+      }
     }
 
     li:last-child {
