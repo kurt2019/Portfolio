@@ -8,10 +8,12 @@ import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Footer} from "./layout/footer/Footer";
 import {SkillsOlder} from "./layout/sections/skills/SkillsOlder";
 import {GoTopButton} from "./components/goTopBtn/GoTopBtn";
+import {Particle} from "./components/particle/Particle";
 
 function App() {
   return (
     <div className="App">
+        <Particle/>
         <Header/>
         <Main/>
         <AboutMe/>

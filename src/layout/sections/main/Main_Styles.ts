@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {font} from "../../../styles/Common";
-import {MainButton} from "./MainButton";
 
 
 const Main = styled.section`
@@ -11,7 +10,6 @@ const Main = styled.section`
   ${FlexWrapper} > div {
     position: relative;
   }
-  
   
   @media ${theme.media.mobile} {
     padding-top: 29px;
@@ -71,7 +69,6 @@ const Description = styled.p`
     max-width: 329px;
     text-align: center;
   }
-  
 `
 
 const Photo = styled.img`
@@ -80,7 +77,7 @@ const Photo = styled.img`
   object-fit: cover;
 
   @media ${theme.media.mobile} {
-    width: 320px;
+    max-width: 320px;
     height: 240px;
   }
   @media ${theme.media.tablet} {

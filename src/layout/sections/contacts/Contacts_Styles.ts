@@ -4,7 +4,9 @@ import {Button} from "../../../components/Button";
 import {font} from "../../../styles/Common";
 
 const Contacts = styled.section`
-  padding: 140px 0 190px 0;
+  padding: 140px 0 80px 0;
+  position: relative;
+  backdrop-filter: blur(10px);
 
   @media ${theme.media.tablet} {
     padding-top: 0;
@@ -24,7 +26,7 @@ const Form = styled.form`
   padding: 28px 0 0 0;
   color: ${theme.colors.mainFont};
   position: relative;
-  
+
   ${Button} {
     margin-top: 22px;
     width: 100%;

@@ -9,6 +9,7 @@ const Skills = styled.section`
 
   ${SectionTitle} {
     padding-bottom: 28px;
+    position: relative;
     
     @media ${theme.media.mobile} {
       padding-bottom: 47px;

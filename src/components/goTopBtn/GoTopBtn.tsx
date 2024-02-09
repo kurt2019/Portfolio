@@ -21,7 +21,7 @@ export const GoTopButton: React.FC = () => {
         <>
             {showBtn && (
                 <StyleMainButton onClick={()=>{scroll.scrollToTop()}}>
-                    <Icon iconId={"arrowGoTop"} width={"16"} height={"16"} viewBox={"0 0 16 16"}/>
+                    <Icon iconId={"Arrow"} width={"18"} height={"28"} viewBox={"0 0 18 28"}/>
                 </StyleMainButton>
             )}
         </>
@@ -29,7 +29,7 @@ export const GoTopButton: React.FC = () => {
 };
 
 const StyleMainButton = styled.button`
-  background-color: ${theme.colors.primaryBg};
+  background-color: inherit;
   cursor: pointer;
   padding: 0;
   position: fixed;
@@ -38,6 +38,7 @@ const StyleMainButton = styled.button`
   width: 40px;
   height: 40px;
   border: 0;
+  transform: rotate(180deg);
 
   @media ${theme.media.tablet} {
     display: none;

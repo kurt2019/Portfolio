@@ -4,7 +4,9 @@ import {font} from "../../styles/Common";
 
 
 const Footer = styled.footer`
-  padding-bottom: 100px;
+  padding: 80px 0 100px 0;
+  backdrop-filter: blur(5px);
+  position: relative;
 `
 
 const HelperItem = styled.div`
@@ -27,6 +29,12 @@ const SocialGroup = styled.ul`
 `
 
 const SocialItem = styled.li`
+
+  &:hover {
+    background-image: ${theme.lineGrad.second};
+    color: transparent;
+    -webkit-background-clip: text;
+  }
 `
 
 const SocialLink = styled.a`

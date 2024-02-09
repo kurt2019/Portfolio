@@ -5,10 +5,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const Section = styled.section`
   padding-top: 265px;
-  
-  ${FlexWrapper} > div {
-    position: relative;
-  }
+  position: relative;
   
   h2 {
     padding-left: 2.5%;
