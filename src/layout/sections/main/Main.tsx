@@ -8,6 +8,7 @@ import {MainButton} from "./MainButton";
 import {Bounce} from "react-awesome-reveal";
 import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
+import {Link} from "react-scroll";
 
 
 export const Main: React.FC = () => {
@@ -33,7 +34,9 @@ export const Main: React.FC = () => {
                             officia consequat duis enim velit mollit. Exercitation veniam consequat sunt.
                         </SM.Description>
                         <Bounce damping={0.6}>
+                            <Link to={"contact"} smooth={true}>
                             <Button>Contact Me</Button>
+                            </Link>
                         </Bounce>
                         <MainButton/>
                     </div>
